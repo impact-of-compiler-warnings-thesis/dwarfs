@@ -60,7 +60,7 @@ elseif("${CMAKE_CXX_COMPILER_ID}" STREQUAL "Clang")
   endif()
 endif()
 
-include(${CMAKE_SOURCE_DIR}/cmake/version.cmake)
+# include(${CMAKE_SOURCE_DIR}/cmake/version.cmake)
 
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/modules")
 
