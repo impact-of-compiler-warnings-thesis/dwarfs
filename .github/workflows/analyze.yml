@@ -53,9 +53,9 @@ jobs:
                    -DCMAKE_BUILD_TYPE=Debug \
                    -DWITH_TESTS=ON \
                    -DPREFER_SYSTEM_LIBFMT=OFF \
-                   -DPREFER_SYSTEM_ZSTD=ON \
-                   -DPREFER_SYSTEM_XXHASH=ON \
-                   -DPREFER_SYSTEM_GTEST=ON
+                   -DPREFER_SYSTEM_ZSTD=OFF \
+                   -DPREFER_SYSTEM_XXHASH=OFF \
+                   -DPREFER_SYSTEM_GTEST=OFF
       - name: Run build-wrapper
         run: |
           build-wrapper-linux-x86-64 --out-dir ${{ env.BUILD_WRAPPER_OUT_DIR }} ninja -C build
